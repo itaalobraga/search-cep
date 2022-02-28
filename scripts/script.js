@@ -26,7 +26,7 @@ const handleValues = (data) => {
 const searchCep = async () => {
     
     try {
-        const url = `http://viacep.com.br/ws/${cep.value}/json/`;
+        const url = `https://viacep.com.br/ws/${cep.value}/json/`;
         const response = await fetch(url);
         const data = await response.json();
 
