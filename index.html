@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ViaCEP</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+    <body>
+        <div class="container__wrapper">
+            <h1 class="container__title">ViaCEP</h1>
+            <div class="container__form">
+                <div class="container__form__item">
+                    <label for="cep">CEP</label>
+                    <input type="number" name="cep" id="cep" onblur="searchCep()" required />
+                </div>
+                <div class="container__form__item">
+                    <label for="address">Endereço</label>
+                    <input
+                        type="text"
+                        name="address"
+                        id="address"
+                        autocomplete="off"
+                        required
+                    />
+                </div>
+                <div class="container__form__item">
+                    <label for="number">Número</label>
+                    <input type="number" name="number" id="number" required />
+                </div>
+                <div class="container__form__item">
+                    <label for="district">Bairro</label>
+                    <input
+                        type="text"
+                        name="district"
+                        id="district"
+                        autocomplete="off"
+                        required
+                    />
+                </div>
+                <div class="container__form__item">
+                    <label for="city">Cidade</label>
+                    <input
+                        type="text"
+                        name="city"
+                        id="city"
+                        autocomplete="off"
+                        required
+                    />
+                </div>
+                <div class="container__form__item">
+                    <label for="state">Estado</label>
+                    <input
+                        type="text"
+                        name="state"
+                        id="state"
+                        autocomplete="off"
+                        required
+                    />
+                </div>
+                
+                <div class="container__form__item">
+                    <p class="container__form__item__error" id="error"></p>
+                    <button onclick="checkCep()">Buscar</button>
+                </div>
+            </div>
+        </div>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>
